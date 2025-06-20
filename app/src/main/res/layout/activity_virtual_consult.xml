@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/background"
+    android:clipToOutline="true"
+    android:padding="16dp"
+    tools:context=".ActivityHome"
+    tools:layout_editor_absoluteX="22dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="381dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="400dp"
+            android:layout_height="67dp"
+            android:background="@color/white"
+            app:backgroundTint="#FFFFFF"
+            app:itemActiveIndicatorStyle="@style/CardView.Light"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/bottom_menu" />
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPulmonology"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/viewTitle8"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Pulmonology"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText8"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Pulmo sergen"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="71dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Speakable text for your ImageButton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/pulmonology" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOtology"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="7dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewPulmonology"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/viewTitle7"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Otology"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText7"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Otologist"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="67dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Speakable text for your ImageButton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/otology" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewCardiology"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="7dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewGynecology"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/viewTitle1"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Cardiology"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText1"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Cardiologist"
+
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Speakable text for your ImageButton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/heart"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewNeurosurgery"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewOralHealth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/viewTitle4"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Neurosurgery"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText4"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Neurosurgen"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Speakable text for your ImageButton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/neurosurgeryq" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOralHealth"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewOrthopedics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/viewTitle5"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Oral Health"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText5"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Dentist"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="71dp"
+            android:layout_height="61dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Speakable text for your ImageButton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/oralhealth" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOrthopedics"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewOtology"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/viewTitle6"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Orthopedics"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText6"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Orthopedician"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="71dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="Speakable text for your ImageButton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/orthopedics" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGynecology"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewNeurosurgery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/viewTitle2"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Gynecology"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText2"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Gynecologist"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#02FFFFFF"
+            android:contentDescription="Speakable text for your ImageButton"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/gynecologist" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMedicalCenter"
+        android:layout_width="345dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="44dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewCardiology"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333"
+        tools:ignore="ExtraText">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="95dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/departaments" />
+
+
+        <TextView
+            android:id="@+id/viewTitle"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="All departaments"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/viewText"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="View all doctors"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

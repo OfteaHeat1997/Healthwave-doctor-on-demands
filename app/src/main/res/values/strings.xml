@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">healthwave</string>
+    <string name="todo">TODO</string>
+    <string name="start">Start</string>
+    <string name="todoEdit">TODO</string>
+    <string name="startBtn">Start</string>
+    <string name="question">Question</string>
+    <string name="response">Response</string>
+    <string name="your_userid">Your UserID:</string>
+</resources>

@@ -1,0 +1,427 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/background"
+    android:clipToOutline="true"
+    android:padding="16dp"
+    android:textAlignment="center"
+    tools:context=".NotificationActivity">
+
+    <!-- The BottomNavigationView -->
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="330dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032">
+
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/seeAll"
+        android:layout_width="114dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="See All"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <ImageButton
+        android:id="@+id/imageBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#D5E0EA"
+        android:elevation="8dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewNotifiction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/Notifications"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/nitifications"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/discoveries"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textHi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.088" />
+
+
+        <EditText
+            android:id="@+id/minutesNotification"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="300dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="15 Min"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="102dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:text="Aprill 2023"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNotificationPhase"
+            android:layout_width="235dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Your telemedicine appointment is scheduled for tomorrow at 2:00 PM with Dr. Smith."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="83dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Mark All"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#D5E0EA"
+        android:elevation="8dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/Notifications4"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/nitifications"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/discoveries"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textHi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.088" />
+
+
+        <EditText
+            android:id="@+id/minutesNotification4"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="300dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="15 Min"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <TextView
+            android:id="@+id/titletext4"
+            android:layout_width="102dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:text="Aprill 2023"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNotificationPhase4"
+            android:layout_width="235dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Your telemedicine appointment is scheduled for tomorrow at 2:00 PM with Dr. Smith."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewNotification2"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#D5E0EA"
+        android:elevation="8dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/Notifications2"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/nitifications"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/discoveries"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textHi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.088" />
+
+
+        <EditText
+            android:id="@+id/minutesNotification2"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="300dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="15 Min"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <TextView
+            android:id="@+id/titletext2"
+            android:layout_width="102dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:text="Aprill 2023"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNotificationPhase2"
+            android:layout_width="235dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Your telemedicine appointment is scheduled for tomorrow at 2:00 PM with Dr. Smith."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewNotifiction"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#D5E0EA"
+        android:elevation="8dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewNotification2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/Notifications1"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/nitifications"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/discoveries"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textHi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.088" />
+
+
+        <EditText
+            android:id="@+id/minutesNotification1"
+            android:layout_width="63dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="300dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="15 Min"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <TextView
+            android:id="@+id/titletext1"
+            android:layout_width="102dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:text="Aprill 2023"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNotificationPhase1"
+            android:layout_width="235dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Your telemedicine appointment is scheduled for tomorrow at 2:00 PM with Dr. Smith."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/titleNotification"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:gravity="center"
+        android:text="Notification"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NotificationNew"
+        android:layout_width="83dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="New"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="356dp"
+        android:layout_height="62dp"
+        android:background="@color/white"
+        app:backgroundTint="#FFFFFF"
+        app:itemActiveIndicatorStyle="@style/CardView.Light"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:menu="@menu/bottom_menu" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
