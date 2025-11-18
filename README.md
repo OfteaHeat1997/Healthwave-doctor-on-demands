@@ -327,17 +327,19 @@ This project was developed as a collaborative effort by **2 team members**:
 
 ### Development Team
 
-1. **[OfteaHeat1997](https://github.com/OfteaHeat1997)** - Project Lead & Backend Developer
+1. **[OfteaHeat1997](https://github.com/OfteaHeat1997)** - Project Lead & Frontend Developer
    - Repository owner and maintainer
-   - Core Android development
-   - API integration (OpenAI, Zego Cloud)
-   - Project architecture
-
-2. **[Gendrik Victoria (GLVictoria)](https://github.com/GLVictoria)** - Frontend Developer & UI/UX Designer
    - UI/UX Design (Figma)
    - Frontend development
    - User interface implementation
    - Design consistency
+
+2. **[Gendrik Victoria (GLVictoria)](https://github.com/GLVictoria)** - Backend Developer & Core Architecture
+   - Core Android development
+   - API integration (OpenAI, Zego Cloud)
+   - Backend implementation
+   - Project architecture
+   - Video/voice calling functionality
 
 ---
 

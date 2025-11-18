@@ -7,24 +7,10 @@ This project was developed as a collaborative effort by a team of 2 developers.
 ## 🏆 Core Team
 
 ### [OfteaHeat1997](https://github.com/OfteaHeat1997)
-**Project Lead & Backend Developer**
+**Project Lead & Frontend Developer**
 
 **Contributions:**
 - 🏗️ Repository owner and maintainer
-- 📱 Core Android application development
-- 🔌 API integration (OpenAI GPT-3.5, Zego Cloud)
-- 🏛️ Project architecture and structure
-- 📊 Database and state management
-- 🔧 Build configuration and deployment
-
-**Technologies:** Kotlin, Android SDK, OkHttp3, Gradle
-
----
-
-### [Gendrik Victoria (GLVictoria)](https://github.com/GLVictoria)
-**Frontend Developer & UI/UX Designer**
-
-**Contributions:**
 - 🎨 UI/UX Design in Figma
 - 💻 Frontend development and implementation
 - 🖼️ User interface components
@@ -33,6 +19,22 @@ This project was developed as a collaborative effort by a team of 2 developers.
 - ✨ User experience optimization
 
 **Technologies:** Kotlin, Android XML, Material Design, Figma
+
+---
+
+### [Gendrik Victoria (GLVictoria)](https://github.com/GLVictoria)
+**Backend Developer & Core Architecture**
+
+**Contributions:**
+- 📱 Core Android application development
+- 🔌 API integration (OpenAI GPT-3.5, Zego Cloud)
+- 🏛️ Project architecture and structure
+- 📊 Database and state management
+- 🔧 Build configuration and deployment
+- 📞 Video/voice calling implementation
+- 🤖 AI chatbot integration
+
+**Technologies:** Kotlin, Android SDK, OkHttp3, Zego Cloud SDK, OpenAI API
 
 **Location:** Eindhoven, Netherlands
 
@@ -53,8 +55,8 @@ This project was developed as a collaborative effort by a team of 2 developers.
 ## 🤝 Collaboration
 
 This project demonstrates effective teamwork between:
-- **Backend Development** (OfteaHeat1997)
-- **Frontend & Design** (GLVictoria)
+- **Frontend & Design** (OfteaHeat1997)
+- **Backend Development** (GLVictoria)
 
 Both team members contributed to creating a comprehensive healthcare platform with AI integration and telemedicine capabilities.
 
@@ -85,14 +87,14 @@ Special thanks to:
 - Base activities and navigation setup
 
 ### Phase 2: UI/UX Design
-- Figma design by GLVictoria
+- Figma design by OfteaHeat1997
 - Material Design implementation
 - Layout creation and styling
 
 ### Phase 3: Feature Development
-- AI chatbot integration (OfteaHeat1997)
-- Video calling setup (OfteaHeat1997)
-- UI polish and refinement (GLVictoria)
+- AI chatbot integration (GLVictoria)
+- Video calling setup (GLVictoria)
+- UI polish and refinement (OfteaHeat1997)
 
 ### Phase 4: Integration & Testing
 - Feature integration by both developers
