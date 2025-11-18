@@ -1,11 +1,13 @@
 package com.example.healthwave
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.textfield.TextInputEditText
 import okhttp3.Call
 import okhttp3.Callback
@@ -28,6 +30,30 @@ class BotActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bot)
+
+        // Setup bottom navigation
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.selectedItemId = R.id.bottom_diagnosis
+
+        bottomNavigationView.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.bottom_home -> {
+                    val intent = Intent(this, ActivityHome::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.bottom_virtualconsult -> {
+                    val intent = Intent(this, VirtualConsultActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.bottom_diagnosis -> {
+                    // Already in BotActivity
+                    true
+                }
+                else -> false
+            }
+        }
 
         etQuestion = findViewById(R.id.etQuestion)
         idTVQuestion = findViewById(R.id.idTVQuestion)

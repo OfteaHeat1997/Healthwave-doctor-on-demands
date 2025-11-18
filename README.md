@@ -1,61 +1,436 @@
-# Duo Case 12 Doctor on demand Healtwave
+# 🏥 HealthWave - Doctor on Demand
 
+<div align="center">
 
-## Name
+**Bridging Healthcare Accessibility in Developing Countries**
 
-Duo Case 12 Doctor on demand Healthwave
+[![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com/)
+[![Kotlin](https://img.shields.io/badge/Language-Kotlin-blue.svg)](https://kotlinlang.org/)
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg)](https://android-arsenal.com/api?level=21)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Description
+</div>
 
-This project aims to develop a mobile application that provides a platform for people in developing countries to conveniently communicate with doctors. Additionally, users can leverage the power of artificial intelligence (AI) to ask basic medical questions and seek guidance for their healthcare needs.
-In many parts of the world, it can be challenging for individuals in underserved communities to have easy access to healthcare professionals. This mobile app bridges the gap by providing a user-friendly interface that connects users to a network of doctors who are willing to offer their expertise remotely.
-By utilizing the app, individuals can schedule virtual appointments with doctors, avoiding the need for physical visits to healthcare facilities. This proves particularly beneficial in areas where medical resources are limited or inaccessible. The app also presents an opportunity for remote diagnosis, empowering users to receive medical advice without traveling long distances.
-Moreover, the integration of AI technology within the app allows users to ask basic medical questions and receive informative responses. Designed to understand natural language and provide accurate information, the AI feature assists users in understanding symptoms, identifying potential ailments, and suggesting appropriate next steps. This functionality proves invaluable in providing immediate guidance and potentially reducing the need for unnecessary medical consultations.
-In conclusion, this mobile app project proposes an innovative solution to enhance healthcare accessibility in developing countries. By combining the convenience of virtual communication with doctors and the intelligence of AI technology, it aims to empower individuals to seek medical advice and care more efficiently, ultimately improving the overall healthcare experience in these communities.
+---
 
+## 📖 About The Project
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+HealthWave is a mobile healthcare platform designed to provide accessible medical care to people in developing countries. The application combines telemedicine capabilities with AI-powered medical assistance to bridge the gap between patients and healthcare professionals in underserved communities.
 
-## Visuals
+In many parts of the world, accessing quality healthcare is challenging due to limited medical resources, long travel distances, and lack of infrastructure. HealthWave addresses these challenges by offering:
 
-[Link for the video]
+- **Virtual Consultations** - Connect with doctors remotely through video/voice calls
+- **AI Medical Assistant** - Get instant answers to basic medical questions using OpenAI's GPT technology
+- **Smart Appointment Booking** - Schedule consultations with specialists at your convenience
+- **Doctor Directory** - Browse doctors by specialty (Cardiology, Pulmonology, Gynecology, etc.)
+- **Symptom Analysis** - Preliminary diagnosis assistance through AI-powered symptom checker
 
-(https://drive.google.com/file/d/1JaGpyMhlHL99d8MiC5hP43TxXKyg3KQo/view?usp=drive_link)   
+---
 
-Link for the pictures
+## ✨ Features
 
-https://ibb.co/album/Wntsnd
-	
-Figma link
+### 🏠 Home Dashboard
+- Intuitive interface with quick access buttons
+- Bottom navigation for seamless app navigation
+- Real-time notifications and alerts
 
-https://www.figma.com/file/yiRaGYam0IdMIutolVoG1t/Doctor-Demand?type=design&node-id=0-1&mode=design&t=x8ZkPhoTwRBLmb1R-0
+### 🤖 AI-Powered Medical Bot
+- Natural language understanding for health questions
+- Powered by OpenAI's GPT-3.5 (text-davinci-003)
+- Provides informative responses to common medical queries
+- Instant medical guidance 24/7
 
+### 👨‍⚕️ Virtual Consultations
+- Browse doctors by medical specialty
+- View doctor profiles and availability
+- Specialty categories:
+  - Cardiology (Heart specialists)
+  - Pulmonology (Lung specialists)
+  - Gynecology (Women's health)
+  - And more...
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+### 📅 Smart Appointment Booking
+- Interactive date and time picker
+- Instant booking confirmation
+- Appointment management system
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### 📞 Video/Voice Calling
+- High-quality video consultations powered by Zego Cloud
+- Voice call option for limited bandwidth
+- Real-time communication with medical professionals
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### 🩺 Disease Diagnosis Assistant
+- Symptom-based preliminary diagnosis
+- Links directly to appointment booking
+- Educational health information
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### 👤 User Profile Management
+- Personal health records
+- Appointment history
+- Profile customization
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+---
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## 🛠️ Technology Stack
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+### Core Technologies
+- **Language:** Kotlin 1.9.0
+- **Platform:** Android (minSdk: 21, targetSdk: 34)
+- **Build System:** Gradle 8.0
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### Frameworks & Libraries
 
-## License
-For open source projects, say how it is licensed.
+| Category | Technology | Version |
+|----------|-----------|---------|
+| **UI Framework** | AndroidX Core | 1.12.0 |
+| **UI Components** | Material Design | 1.9.0 |
+| **Layout** | ConstraintLayout | 2.1.4 |
+| **Video/Voice Calls** | Zego Cloud UIKit | Latest |
+| **Call Signaling** | Zego Signaling Plugin | Latest |
+| **HTTP Client** | OkHttp3 | 4.10.0 |
+| **AI Integration** | OpenAI GPT-3.5 API | text-davinci-003 |
+| **Testing** | JUnit | 4.13.2 |
+| **UI Testing** | Espresso | 3.5.1 |
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+---
+
+## 🎬 Live Demo
+
+### 📹 Video Demo
+Watch the full application walkthrough and features demonstration:
+
+**[🎥 View Video Demo](https://drive.google.com/file/d/1JaGpyMhlHL99d8MiC5hP43TxXKyg3KQo/view?usp=drive_link)**
+
+### 📸 Screenshots
+Explore the application interface and features:
+
+**[🖼️ View Screenshots Gallery](https://ibb.co/album/Wntsnd)**
+
+### 🎨 Design Files
+View the complete UI/UX design on Figma:
+
+**[🎨 Figma Design](https://www.figma.com/file/yiRaGYam0IdMIutolVoG1t/Doctor-Demand?type=design&node-id=0-1&mode=design&t=x8ZkPhoTwRBLmb1R-0)**
+
+---
+
+## 📱 Installation & Setup
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+1. **Android Studio** (Arctic Fox or later)
+   - Download from [developer.android.com](https://developer.android.com/studio)
+
+2. **Java Development Kit (JDK) 8 or higher**
+   - Download from [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html) or use [OpenJDK](https://openjdk.org/)
+
+3. **Android SDK**
+   - API Level 21-34
+   - Build Tools 34.0.0
+   - Installed via Android Studio SDK Manager
+
+4. **Git**
+   - Download from [git-scm.com](https://git-scm.com/)
+
+### Step-by-Step Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/OfteaHeat1997/Healthwave-doctor-on-demands.git
+   cd Healthwave-doctor-on-demands
+   ```
+
+2. **Configure Android SDK**
+
+   Create a `local.properties` file in the root directory:
+   ```properties
+   sdk.dir=/path/to/your/Android/Sdk
+   ```
+
+   **Example paths:**
+   - **Windows:** `C:\\Users\\YourName\\AppData\\Local\\Android\\Sdk`
+   - **Mac:** `/Users/YourName/Library/Android/sdk`
+   - **Linux:** `/home/YourName/Android/Sdk`
+
+3. **Set JAVA_HOME Environment Variable**
+
+   **Windows:**
+   ```cmd
+   set JAVA_HOME=C:\Program Files\Java\jdk-11.0.x
+   set PATH=%JAVA_HOME%\bin;%PATH%
+   ```
+
+   **Mac/Linux:**
+   ```bash
+   export JAVA_HOME=/path/to/jdk
+   export PATH=$JAVA_HOME/bin:$PATH
+   ```
+
+4. **Sync Gradle Dependencies**
+
+   Open the project in Android Studio and let it sync automatically, or run:
+   ```bash
+   ./gradlew build
+   ```
+
+5. **Run the Application**
+
+   **Option A: Using Android Studio**
+   - Click the "Run" button (green triangle)
+   - Select your device/emulator
+
+   **Option B: Using Command Line**
+   ```bash
+   ./gradlew installDebug
+   ```
+
+---
+
+## 🚀 Usage
+
+### Running on Emulator
+
+1. Open Android Studio
+2. Go to `Tools > Device Manager`
+3. Create a new Virtual Device (recommended: Pixel 5, API 30+)
+4. Click `Run 'app'` from the toolbar
+5. Select your emulator from the device list
+
+### Running on Physical Device
+
+1. Enable **Developer Options** on your Android device:
+   - Go to `Settings > About Phone`
+   - Tap `Build Number` 7 times
+
+2. Enable **USB Debugging**:
+   - Go to `Settings > Developer Options`
+   - Toggle on "USB Debugging"
+
+3. Connect device via USB
+4. Click `Run 'app'` in Android Studio
+5. Select your device from the list
+
+### Building Release APK
+
+To create a production-ready APK:
+
+```bash
+./gradlew assembleRelease
+```
+
+The APK will be generated at:
+```
+app/build/outputs/apk/release/app-release.apk
+```
+
+---
+
+## 📋 Key Activities & Screens
+
+| Activity | File Path | Purpose |
+|----------|-----------|---------|
+| **Splash Screen** | `MainActivity.kt` | App entry point with branding |
+| **Home Dashboard** | `ActivityHome.kt` | Main navigation hub |
+| **AI Medical Bot** | `BotActivity.kt` | Chat interface for medical Q&A |
+| **Virtual Consult** | `VirtualConsultActivity.kt` | Browse doctors by specialty |
+| **Appointment Booking** | `BookActivity.kt` | Schedule appointments |
+| **Video Call** | `VideoActivity.kt` | Video/voice consultations |
+| **Disease Diagnosis** | `DeseaseDiagnosisActivity.kt` | Symptom checker |
+| **User Profile** | `ProfileActivity.kt` | Profile management |
+| **Notifications** | `NotificationActivity.kt` | Alerts and updates |
+| **Booking Confirmation** | `BookingcompleteActivity.kt` | Appointment confirmation |
+
+---
+
+## 🔑 API Configuration
+
+### OpenAI API Setup
+
+The AI medical bot uses OpenAI's GPT-3.5 API. To configure:
+
+1. Get an API key from [OpenAI Platform](https://platform.openai.com/)
+2. Update `BotActivity.kt` (line ~50):
+   ```kotlin
+   private const val API_KEY = "your-openai-api-key-here"
+   ```
+
+### Zego Cloud Setup
+
+Video/voice calling uses Zego Cloud. To configure:
+
+1. Create account at [Zego Cloud Console](https://console.zegocloud.com/)
+2. Create a new project
+3. Update `VideoActivity.kt` with your credentials:
+   ```kotlin
+   val appID: Long = your_app_id
+   val appSign: String = "your_app_sign"
+   ```
+
+**⚠️ Security Note:** For production, move API keys to environment variables or a secure backend.
+
+---
+
+## 🏗️ Project Structure
+
+```
+Healthwave-doctor-on-demands/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/healthwave/
+│   │   │   │   ├── MainActivity.kt
+│   │   │   │   ├── ActivityHome.kt
+│   │   │   │   ├── BotActivity.kt
+│   │   │   │   ├── VirtualConsultActivity.kt
+│   │   │   │   ├── BookActivity.kt
+│   │   │   │   ├── VideoActivity.kt
+│   │   │   │   └── [other activities...]
+│   │   │   ├── res/
+│   │   │   │   ├── layout/          # XML layouts
+│   │   │   │   ├── drawable/        # Images and icons
+│   │   │   │   ├── values/          # Strings, colors, themes
+│   │   │   │   └── menu/            # Bottom navigation menu
+│   │   │   └── AndroidManifest.xml
+│   │   └── test/                    # Unit tests
+│   └── build.gradle.kts             # App-level Gradle config
+├── gradle/
+├── build.gradle.kts                 # Project-level Gradle config
+├── settings.gradle.kts
+└── README.md
+```
+
+---
+
+## 👥 Team Members
+
+This project was developed as a collaborative effort by **2 team members**:
+
+### Development Team
+
+1. **[OfteaHeat1997](https://github.com/OfteaHeat1997)** - Project Lead & Backend Developer
+   - Repository owner and maintainer
+   - Core Android development
+   - API integration (OpenAI, Zego Cloud)
+   - Project architecture
+
+2. **[Gendrik Victoria (GLVictoria)](https://github.com/GLVictoria)** - Frontend Developer & UI/UX Designer
+   - UI/UX Design (Figma)
+   - Frontend development
+   - User interface implementation
+   - Design consistency
+
+---
+
+## 🎯 Use Cases
+
+### Primary Users
+- **Patients in rural/underserved areas** seeking medical advice
+- **People with limited access** to healthcare facilities
+- **Individuals seeking quick answers** to basic health questions
+- **Patients requiring remote consultations** for follow-ups
+
+### Healthcare Providers
+- **Doctors willing to provide** remote consultations
+- **Medical professionals** expanding their reach to underserved communities
+- **Healthcare organizations** looking to implement telemedicine
+
+---
+
+## 🚧 Roadmap
+
+### Planned Features
+- [ ] User authentication and login system
+- [ ] Prescription management
+- [ ] Medical history tracking
+- [ ] Payment integration for consultations
+- [ ] Multi-language support
+- [ ] Offline mode for basic features
+- [ ] Push notifications for appointment reminders
+- [ ] Doctor rating and review system
+- [ ] Integration with electronic health records (EHR)
+- [ ] Pharmacy locator and medicine delivery
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to improve HealthWave! Here's how you can help:
+
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit your changes**
+   ```bash
+   git commit -m "Add some AmazingFeature"
+   ```
+4. **Push to the branch**
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. **Open a Pull Request**
+
+### Code Style Guidelines
+- Follow [Kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html)
+- Use meaningful variable and function names
+- Add comments for complex logic
+- Write unit tests for new features
+
+---
+
+## 🐛 Known Issues
+
+- API keys are currently hardcoded (security concern - needs environment configuration)
+- No user authentication system implemented yet
+- Internet connection required for all features (no offline mode)
+- Limited error handling for network failures
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Support
+
+For questions, issues, or support:
+
+- **GitHub Issues:** [Create an issue](https://github.com/OfteaHeat1997/Healthwave-doctor-on-demands/issues)
+- **Project Repository:** [OfteaHeat1997/Healthwave-doctor-on-demands](https://github.com/OfteaHeat1997/Healthwave-doctor-on-demands)
+
+---
+
+## 🙏 Acknowledgments
+
+- **OpenAI** for providing the GPT-3.5 API for AI medical assistance
+- **Zego Cloud** for video/voice calling infrastructure
+- **Android Development Community** for excellent documentation and resources
+- **All contributors** who have helped improve this project
+
+---
+
+## 📊 Project Status
+
+**Status:** ✅ Active Development
+
+This project is currently in active development as a university/educational project. The core features are functional and ready for demonstration. Future updates will focus on production-readiness, security enhancements, and additional features.
+
+---
+
+## 🌟 Star This Repo
+
+If you find HealthWave useful or interesting, please consider giving it a ⭐ on GitHub!
+
+---
+
+<div align="center">
+
+**Made with ❤️ for improving healthcare accessibility worldwide**
+
+[Report Bug](https://github.com/OfteaHeat1997/Healthwave-doctor-on-demands/issues) · [Request Feature](https://github.com/OfteaHeat1997/Healthwave-doctor-on-demands/issues) · [View Repository](https://github.com/OfteaHeat1997/Healthwave-doctor-on-demands)
+
+</div>
