@@ -96,6 +96,22 @@ In many parts of the world, accessing quality healthcare is challenging due to l
 
 ## 🎬 Live Demo
 
+### 📱 Download & Try the App
+
+Want to try HealthWave on your Android device?
+
+**[📥 Download APK from Releases](https://github.com/OfteaHeat1997/Healthwave-doctor-on-demands/releases)**
+
+**Installation Instructions:**
+1. Download the latest APK from the releases page
+2. Enable "Install from Unknown Sources" on your Android device
+3. Open the APK file and tap "Install"
+4. Launch HealthWave and explore!
+
+**Minimum Requirements:** Android 5.0 (API 21) or higher
+
+---
+
 ### 📹 Video Demo
 Watch the full application walkthrough and features demonstration:
 
@@ -110,6 +126,9 @@ Explore the application interface and features:
 View the complete UI/UX design on Figma:
 
 **[🎨 Figma Design](https://www.figma.com/file/yiRaGYam0IdMIutolVoG1t/Doctor-Demand?type=design&node-id=0-1&mode=design&t=x8ZkPhoTwRBLmb1R-0)**
+
+### 🌐 Interactive Demo (Coming Soon)
+We're working on a browser-based demo using Appetize.io. Stay tuned!
 
 ---
 
